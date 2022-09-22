@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ContactCSS.css">
+    </head>
+    <body>
+        <div id="container">
+            <nav>
+            <div id="toplogo">
+                <img id="BurgerNav" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png" onClick="navClick()">
+                <img id="toppagelogo"src="logo.png">
+            </div>
+                <div id="topmenu">
+                        <ul id="navigation" style="display: none;">   
+                        <li><a href="" onclick="onHome()">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contacts</a></li>
+                        </ul>
+                </div>
+                <div id="topbuttons" style="display: none;">
+                    <input id="buttonsettings" type="submit" name="submit" value="LOG IN" onClick="myalert()" />
+                    <input id="buttonsettings" type="submit" name="submit" value="SIGN UP" />
+                </div>
+            </Nav>
+            <div id="secondcontainer">
+                <div id ="FieldPanel">
+                    <article>
+                        <p id="titletext">Contact</p>
+                            <span id ="TFtitle">Name:</span><br><center><input id="areafield" type ="text" size = "15" name="first_name" placeholder="Enter First Name"/></center><br>
+                            <span id ="TFtitle">Email:</span><br><center><input id="areafield"type ="text" size = "15" name="first_name"placeholder="Enter Email"/></center> <br>
+                            <span id ="TFtitle">Subject:</span><br><center><input id="areafield" type ="text" size = "15" name="first_name" placeholder="Enter Subject"/></center> <br>
+                            <span id ="TFtitle">Message:</span><br><center><textarea id="areafield" rows="5" size="15" cols="50" name="description">
+                            </textarea>	</center>
+                            <br><br>
+                            <center><input id="buttonareafield" type="submit" name="submit" value="SEND A MESSAGE" /></center>
+                    </article>
+                    <div id="ProfileSection">
+                        <center><img id ="Profilepicture"src="Yamato.jpg">  
+                        </center>
+
+                    </div>
+                </div>
+                <div id="InfoPanel">
+                    <div id ="space">
+
+                    </div>
+                    <div id ="firstinfo">
+                        The world of One Piece is almost entirely made up of pirates in search of glory and
+                         the equally vicious Marines who claim to be able to keep them in check. Even before 
+                         Gol D. Roger turned himself in to the authorities and was executed, various pirate 
+                         factions dominated the seas in search of fame and fortune. However, it was Roger's final
+                          words as he was executed, claiming to have amassed an enormous fortune that he hid in the 
+                          Grand Line, which set off a new age in humanity known as the Great Age of Pirates.
+                    </div>
+                    <div id="secondinfo">
+                        Unfortunately for the Marines, who thought they could quash the growing numbers of pirates
+                         by killing the most notorious pirate of all time, this new age would bring about conflict 
+                         on a scale that hadn't been seen in centuries. Many people who already knew about One Piece 
+                         would go on to say that anyone who discovered the fabled treasure would spark a battle that 
+                         would engulf the entire world, bringing a further sense of turmoil to an already chaotic period of time.
+                    </div>
+                    <div id="thirdinfo">
+                        Aside from it being mentioned explicitly in the 4Kids opening for One Piece, Gol D. Roger 
+                        himself confirmed that the One Piece was left on the Grand Line, a vast ocean current that 
+                        spans the entire equator of the world. This current makes passage through the Grand Line 
+                        incredibly dangerous and as such, comparatively few people have managed to navigate the Grand
+                         Line without dying in the process, which made it the perfect hiding place for a treasure like the One Piece.
+                    </div>
+                    <div id ="space">
+                    </div>
+                </div>
+            
+
+                <div id ="Location">
+                    <p>Find us here:</p>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7722.346359775824!2d120.97001912239107!3d14.589205742170764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca3d1375e1fb%3A0x49ebfa658c0ba08!2sIntramuros%2C%20Manila%2C%201002%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1661852121848!5m2!1sen!2sph">
+                    </iframe>
+                </div>
+
+                <nav>
+                    <div id="toplogo">
+                        <img id="toppagelogo"src="logo.png">
+                    </div>
+                    <div id="topmenu">
+                        <p><a href="" onclick="onHome()">Home</a> &nbsp; |&nbsp;  <a href="">About</a> &nbsp; | &nbsp; <a href="Contact.html">Contact</a></p>
+                    </div>
+                </Nav>
+            </div>
+        </div>
+        <script>
+            // Javascript start
+            function navClick() {
+                var navigation = document.getElementById("navigation");
+                var topbuttons = document.getElementById("topbuttons");
+                // if nav is hidden, display block
+                // else, display none
+    
+                if (navigation.style.display === "none") {
+                    navigation.style.display = "flex";
+                    topbuttons.style.display = "flex";
+
+                }
+                else {
+                    navigation.style.display = "none";
+                    topbuttons.style.display = "none";
+                }
+            }
+
+            function myalert() {
+            alert("Log In");
+            }
+
+            function onHome() {
+            alert("Grove Street, Home");
+            }
+            // Javascript end
+        </script>
+    </body>
+</html>

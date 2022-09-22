@@ -1,0 +1,291 @@
+            #container{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
+            nav{
+                width: 100%;
+                background-color: #B1D7B4;
+                display: flex;
+                flex-direction: row;
+                font-family: Courier;
+            }
+            #secondcontainer{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            #FieldPanel{
+                height: 100vh;
+                background-color: #F7F6DC;
+                display: flex;
+                flex-direction: row;
+            }
+            header, footer{
+                height: 15%;
+                background-color: rgb(175, 241, 121);
+            }
+
+
+
+            /* Information Panel */
+            #InfoPanel{
+                height: 15%;
+                background-color: #FFC090;
+                display: flex;
+                gap: 20px;
+                flex-direction: row;
+            }
+            #firstinfo, #secondinfo, #thirdinfo{
+                width: 30%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                text-align: justify;
+                font-family: Courier;
+            }
+            #space{
+                width: 5%;
+            }
+
+
+            /* Location Panel*/
+            #Location{
+                text-align: center;
+                font-size: 40;
+                height: 600;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: #7FB77E;
+            }
+            #map{
+                width: 80%;
+                height: 70%;
+            }
+
+            /* Contact Information*/
+            article{
+                width:50%;
+                left: 100;
+            }
+            #titletext{
+                font-size: 40;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                margin-left: 25%;
+            }
+            #ProfileSection{
+                width: 50%;
+            }
+            #Profilepicture{
+                width: 75%;
+                height: 50%;
+                padding-top: 100;
+            }
+            #areafield{
+                width: 50%;
+                height: 6%;
+            }
+            #buttonareafield{
+                width: 50%;
+                text-align: center;
+                height: 6%;
+                background-color: #B1D7B4;
+                font-family: Courier;
+                border: none;
+                font-size: 20;
+            }
+            #buttonareafield:hover{
+                background-color: #7FB77E;
+            }
+            #TFtitle{
+                
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-left: 25%;
+            }
+            /*Burger Nav */
+            
+        #burgerNav {
+            display: flex;
+            width: 100%;
+            height: auto;
+            max-width: 30px;
+        }
+            /* Top Navigation Part */
+            #toppagelogo{
+                width: 30%;
+                height: 100%;
+            }
+            #toplogo{
+                width: 25%;
+                background-color: #B1D7B4;
+            }
+            #topmenu{
+                font-family: 'Courier New', Courier, monospace;
+                width: 30%;
+                text-align: center;
+            }
+            #navigation{
+                display: flex;
+                list-style: none;
+                padding-left: 0;
+            }
+            
+            #navigation li{
+             width: 33%;       
+            }
+            #topbuttons{
+                width: 45%;
+                margin-top: 2%;
+            }
+            #buttonsettings{
+                font-family: Courier;
+                font-weight: bold;
+                width: 50%;
+                height: 50%;
+                font-size: 17;
+                background-color: #B1D7B4;
+                border: none;
+            }
+            #buttonsettings:hover{
+                background-color: #7FB77E;
+            }
+
+            #topbuttons{
+                display: flex;
+                flex-direction: row;
+            }
+
+            
+                @media (max-width: 650px) {
+                    #titletext{
+                        text-align: center;
+                        margin-left:0% ;
+                    }
+                #navigation li{
+                    width: 100%;
+                    padding: 10px 0;
+                }
+                #buttonarefield{
+                    font-size: 12;
+                }
+                #navigation{
+                    flex-direction: column;
+                }
+                nav{
+                    flex-direction: column;
+                }
+                #topmenu{
+                    width: 100%;
+                }
+                #toppagelogo{
+                    display: none;
+                }
+                #BurgerNav{
+                    display: flex;
+                }
+                #topbuttons{
+                    flex-direction:column;
+                    width: 100%;
+                    height: 100;
+                }
+                #buttonsettings{
+                    width: 100%;
+                }
+                #FieldPanel{
+                    flex-direction: column;
+                    height: 125vh;
+                }
+                article{
+                    order: 2;
+                    height: 70vh;
+                    width: 100%;
+                }
+                #ProfileSection{
+                    width: 100%;
+                    order: 1;
+                    height: 50vh;
+                }
+                #InfoPanel{
+                    flex-direction: column;
+                }
+                #firstinfo, #secondinfo, #thirdinfo{
+                    width: 80%;
+                    margin-left: 10% ;
+                }
+                #ProfilePicture{
+                    height: 80%;
+                }
+            }
+            
+            @media (max-width: 320px) {
+                #titletext{
+                    text-align: center;
+                    margin-left:0% ;
+                }
+            #navigation li{
+                width: 100%;
+                padding: 10px 0;
+            }
+            #buttonareafield{
+                font-size: 15;
+            }
+            #navigation{
+                flex-direction: column;
+            }
+            nav{
+                flex-direction: column;
+            }
+            #topmenu{
+                width: 100%;
+            }
+            #toppagelogo{
+                display: none;
+            }
+            #BurgerNav{
+                display: flex;
+            }
+            #topbuttons{
+                flex-direction:column;
+                width: 100%;
+                height: 100;
+            }
+            #buttonsettings{
+                width: 100%;
+            }
+            #FieldPanel{
+                flex-direction: column;
+                height: 125vh;
+            }
+            article{
+                order: 2;
+                height: 70vh;
+                width: 100%;
+            }
+            #ProfileSection{
+                width: 100%;
+                order: 1;
+                height: 50vh;
+            }
+            #InfoPanel{
+                flex-direction: column;
+            }
+            #firstinfo, #secondinfo, #thirdinfo{
+                width: 80%;
+                margin-left: 10% ;
+            }
+            #ProfilePicture{
+                height: 80%;
+            }
+        }
+        @media (min-width: 651px) {
+            #BurgerNav {
+                display:none;
+            }
+            #navigation {
+                display: flex !important;
+            } 
+            #topbuttons{
+                display: flex !important;
+            }
+        }
